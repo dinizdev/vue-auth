@@ -27,9 +27,9 @@ const register = () => {
         <h1 class="text-4xl">Register Dashboards</h1>
         <form @submit.prevent="" class="flex flex-col gap-4 ">
             <label for="" class="text-lg">Email:</label>
-            <input v-model="email" class="p-2" type="text" placeholder="Create Email">
+            <input v-model="email" class="p-2 w-72 sm:w-96" type="text" placeholder="Create Email">
             <label for="" class="text-lg">Password:</label>
-            <input v-model="password" class="p-2 w-96" type="password" placeholder="Create Password">
+            <input v-model="password" class="p-2 w-72 sm:w-96" type="password" placeholder="Create Password">
             <button @click="register" type="submit" id="btnCreate"
                 class="p-2 font-bold bg-green-500 text-black pointer hover:bg-green-600">Create
                 Account</button>
