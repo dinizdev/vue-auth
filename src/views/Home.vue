@@ -42,7 +42,9 @@ const register = () => {
             <p v-if="errMsg" class="text-red-500"> {{ errMsg }}</p>
             <button type="submit" @click="register"
                 class="p-2 font-bold uppercase bg-green-500 text-black pointer hover:bg-green-600">Login</button>
-            <a href="/register" class="text-green-300 text-center pointer underline">Sign Up - Register Here</a>
+            <router-link to="/register">
+                <a class="text-green-300 text-center pointer underline">Sign Up - Register Here</a>
+            </router-link>
         </form>
         <p class=""> version 1.0</p>
     </div>
