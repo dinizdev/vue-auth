@@ -29,18 +29,13 @@ const getCurrentUser = () => {
     );
   });
 };
-const handle404error = () => {
-  setTimeout(() => {
-    location.href = "/404page";
-  }, 2000);
-};
 
 router.beforeEach(async (to, from, next) => {
   if (to.matched.some((record) => record.meta.requireAuth)) {
     if (await getCurrentUser()) {
       next();
     } else {
-      handle404error();
+      next("/404page");
       next("/");
     }
   } else {
