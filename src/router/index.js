@@ -35,7 +35,7 @@ router.beforeEach(async (to, from, next) => {
     if (await getCurrentUser()) {
       next();
     } else {
-      next("/404page");
+      router.push("/404page");
       next("/");
     }
   } else {
