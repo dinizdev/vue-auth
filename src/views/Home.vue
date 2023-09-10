@@ -34,11 +34,11 @@ const register = () => {
 </script>
 
 <template>
-    <div class="h-screen flex flex-col gap-10 items-center justify-center text-white bg-zinc-900 sm:p-4">
+    <div class="h-screen flex flex-col  gap-10 items-center justify-center text-white bg-zinc-900 sm:p-10">
         <h1 class="text-4xl">Vue Auth Dashboards</h1>
-        <form @submit.prevent="" class="flex flex-col gap-8 ">
+        <form @submit.prevent="" class="flex flex-col gap-8 sm:p-16">
             <input v-model="email" class="p-2" type="text" placeholder="Email">
-            <input class="p-2 w-96" v-model="password" type="password" placeholder="Password">
+            <input class=" p-2 sm:w-96 " v-model="password" type="password" placeholder="Password">
             <p v-if="errMsg" class="text-red-500"> {{ errMsg }}</p>
             <button type="submit" @click="register"
                 class="p-2 font-bold uppercase bg-green-500 text-black pointer hover:bg-green-600">Login</button>
