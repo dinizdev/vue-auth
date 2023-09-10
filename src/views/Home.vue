@@ -34,7 +34,7 @@ const register = () => {
 </script>
 
 <template>
-    <div class="h-screen flex flex-col gap-10 items-center justify-center text-white bg-zinc-900">
+    <div class="h-screen flex flex-col gap-10 items-center justify-center text-white bg-zinc-900 sm:p-4">
         <h1 class="text-4xl">Vue Auth Dashboards</h1>
         <form @submit.prevent="" class="flex flex-col gap-8 ">
             <input v-model="email" class="p-2" type="text" placeholder="Email">
